@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon's Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+    <script type="text/babel">
+        function App() {
+            return (
+                <div className="container">
+                    <Header />
+                    <AboutMe />
+                    <Portfolio />
+                    <Blog />
+                </div>
+            );
+        }
+
+        function Header() {
+            return <h1>Simon Dieckmann Ørskov Beckmann's Portfolio & Blog</h1>;
+        }
+
+        function AboutMe() {
+            return (
+                <div className="section">
+                    <h2>About Me</h2>
+                    <p>/* Your content here */</p>
+                </div>
+            );
+        }
+
+        function Portfolio() {
+            return (
+                <div className="section">
+                    <h2>Portfolio</h2>
+                    <p>/* Your content here */</p>
+                </div>
+            );
+        }
+
+        function Blog() {
+            return (
+                <div className="section">
+                    <h2>Blog</h2>
+                    <p>/* Your content here */</p>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+
+</html>
